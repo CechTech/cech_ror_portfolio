@@ -23,6 +23,8 @@ Things you may want to cover:
 
 * ...
 
+> This is a rubz app
+
 ### Features
 
 - Real time chat engine for comments
