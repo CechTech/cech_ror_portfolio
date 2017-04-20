@@ -31,7 +31,7 @@ Things you may want to cover:
 - Drag and drop interface
 
 ```ruby
-def my-great-method
+def my_great_method
   puts "here it is"
 end
 ```
