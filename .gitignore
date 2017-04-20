@@ -15,3 +15,7 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+
+# Disable git commit, hides secrets
+/config/secrets.yml
