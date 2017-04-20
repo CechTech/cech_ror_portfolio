@@ -22,3 +22,20 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+### Features
+
+- Real time chat engine for comments
+- Blog
+- Portfolio
+- Drag and drop interface
+
+```ruby
+def my-great-method
+  puts "here it is"
+end
+```
+
+```javascript
+alert('Hi there');
+```
