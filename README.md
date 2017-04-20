@@ -23,7 +23,7 @@ Things you may want to cover:
 
 * ...
 
-> This is a rubz app
+> This is a ruby app
 
 ### Features
 
