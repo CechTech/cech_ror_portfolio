@@ -1,4 +1,5 @@
 class Portfolio < ApplicationRecord
+  include Placeholder
   # Validates table records
   validates_presence_of :title, :body, :main_image, :thumb_image
 
@@ -10,11 +11,13 @@ class Portfolio < ApplicationRecord
   # Another method .uby_on_rails_portfolio_items available  query
   scope :ruby_on_rails_portfolio_items, -> { where(subtitle: 'Ruby on Rails') }
 
+  # Initializes defaults after whole code
   after_initialize :set_defaults
 
+  # Sets defaults for every portfolio item
   # ||= shortcut for if, if nil adds default, if full skips
   def set_defaults
-    self.main_image ||= "http://placehold.it/600x400"
-    self.thumb_image ||= "http://placehold.it/350x150"
+    self.main_image ||= Placeholder.image_generator(height: '600', width: '400')
+    self.thumb_image ||= Placeholder.image_generator(height: '350', width: '200')
   end
 end
