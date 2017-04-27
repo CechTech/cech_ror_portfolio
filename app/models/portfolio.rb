@@ -1,5 +1,10 @@
 class Portfolio < ApplicationRecord
   has_many :technologies
+
+  # Data validation, nested attributes
+  accepts_nested_attributes_for :technologies,
+    eject_if: lambda { |attrs| attrs['name'].blank? }
+
   include Placeholder
   # Validates table records
   validates_presence_of :title, :body, :main_image, :thumb_image
