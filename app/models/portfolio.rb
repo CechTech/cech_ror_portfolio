@@ -3,7 +3,7 @@ class Portfolio < ApplicationRecord
 
   # Data validation, nested attributes
   accepts_nested_attributes_for :technologies,
-    eject_if: lambda { |attrs| attrs['name'].blank? }
+    reject_if: lambda { |attrs| attrs['name'].blank? }
 
   include Placeholder
   # Validates table records
