@@ -7,4 +7,7 @@ class Blog < ApplicationRecord
 
   # Validates table records
   validates_presence_of :title, :body
+
+  # Adds relation to topic.rb
+  belongs_to :topic
 end
