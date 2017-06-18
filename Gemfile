@@ -58,6 +58,7 @@ gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.
 gem 'devise', '~> 4.2', '>= 4.2.1'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'cech_view_tool', '~> 0.1.1'
+gem 'petergate', '~> 1.7', '>= 1.7.5'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
