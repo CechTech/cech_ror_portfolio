@@ -83,6 +83,9 @@ gem 'carrierwave-aws', '~> 1.1'
 gem 'carrierwave', '~> 1.1'
 gem 'mini_magick', '~> 4.7', '>= 4.7.2'
 
+# Form helpers with js
+gem 'cocoon', '~> 1.2', '>= 1.2.10'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
