@@ -19,3 +19,4 @@
 
 # Disable git commit, hides secrets
 /config/secrets.yml
+.env
