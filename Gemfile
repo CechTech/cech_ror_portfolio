@@ -53,7 +53,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Gemfile
+# URL enhancer
 gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 
 # Authentication
@@ -90,6 +90,9 @@ gem 'cocoon', '~> 1.2', '>= 1.2.10'
 gem 'gritter', '~> 1.2'
 
 gem 'twitter', '~> 6.1'
+
+# NoSQL database
+gem 'redis', '~> 3.3', '>= 3.3.3'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
