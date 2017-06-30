@@ -55,13 +55,33 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Gemfile
 gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
+
+# Authentication
 gem 'devise', '~> 4.2', '>= 4.2.1'
+
+# Framework
 gem 'bootstrap', '~> 4.0.0.alpha6'
+
+# My copyright gem
 gem 'cech_view_tool', '~> 0.1.1'
+
+# Authorization
 gem 'petergate', '~> 1.7', '>= 1.7.5'
+
+# Icons
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+
+# Pagination
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
+
+# Drag and drop
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
+# Image upload
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+gem 'carrierwave-aws', '~> 1.1'
+gem 'carrierwave', '~> 1.1'
+gem 'mini_magick', '~> 4.7', '>= 4.7.2'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
