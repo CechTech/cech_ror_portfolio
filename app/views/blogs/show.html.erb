@@ -5,5 +5,7 @@
   <p><%= @blog.body %></p>
 
   <%= render 'comments/comment_form' %>
-  <%= render @blog.comments %>
+  <div id="commemts" data-blog-id="<%= @blog.id %>">
+    <%= render @blog.comments %>
+  </div>
 </div>
