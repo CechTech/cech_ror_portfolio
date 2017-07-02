@@ -1,4 +1,6 @@
-<h1><%= @topic.title %></h1>
-<%= paginate @blogs %>
-<%= render @blogs %>
-<%= paginate @blogs %>
+<div class="col-sm-8">
+  <h1><%= @topic.title %></h1>
+  <%= paginate @blogs %>
+  <%= render @blogs %>
+  <%= paginate @blogs %>
+</div>

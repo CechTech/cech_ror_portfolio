@@ -1,7 +1,9 @@
 class Topic < ApplicationRecord
-  # Validates table records
   validates_presence_of :title
 
-  # Adds relation to blogs.rb
   has_many :blogs
+
+  def self.with_blogs
+    includes(:blogs).where.not(blogs: { id: nil })
+  end
 end
