@@ -94,6 +94,12 @@ gem 'twitter', '~> 6.1'
 # NoSQL database
 gem 'redis', '~> 3.3', '>= 3.3.3'
 
+# Mardown to HTML parser
+gem 'redcarpet', '~> 3.4'
+
+# Syntax highlighting
+gem 'coderay', '~> 1.1', '>= 1.1.1'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
