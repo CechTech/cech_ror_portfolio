@@ -27,14 +27,6 @@ module ApplicationHelper
         title: 'Home'
       },
       {
-        url: about_path,
-        title: 'About'
-      },
-      {
-        url: contact_path,
-        title: 'Contact'
-      },
-      {
         url: blogs_path,
         title: 'Blog'
       },
@@ -43,8 +35,16 @@ module ApplicationHelper
         title: 'Portfolio'
       },
       {
-        url: tech_news_path,
-        title: 'Tech News'
+        url: twitter_path,
+        title: 'Twitter'
+      },
+      {
+        url: about_path,
+        title: 'About Me'
+      },
+      {
+        url: contact_path,
+        title: 'Contact'
       }
     ]
   end
