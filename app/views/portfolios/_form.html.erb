@@ -15,12 +15,12 @@
         <%= f.text_field :subtitle, class: 'form-control' %>
       </div>
       <div class="form-group">
-        <label class="btn btn-primary">
+        <label class="btn btn-primary image-btn">
           Upload a main image file <%= f.file_field :main_image, style: 'display:none;' %>
         </label>
       </div>
       <div class="form-group">
-        <label class="btn btn-primary">
+        <label class="btn btn-primary image-btn">
           Upload a thumb image file <%= f.file_field :thumb_image, style: 'display:none;' %>
         </label>
       </div>
@@ -39,7 +39,7 @@
       <%= f.fields_for :technologies do |technology_form| %>
         <%= render 'technology_fields', f: technology_form %>
       <% end %>
-      <div>
+      <div class="add-technology">
         <%= link_to_add_association 'Add Technology', f, :technologies %>
       </div>
     </div>

@@ -14,7 +14,7 @@
         <p><%= t.name %></p>
       <% end %>
       <% if logged_in?(:site_admin) %>
-        <div>
+        <div class="edit-btn">
           <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
         </div>
       <% end %>
