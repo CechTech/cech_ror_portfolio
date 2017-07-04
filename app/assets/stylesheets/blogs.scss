@@ -8,7 +8,7 @@
 
 @media (min-width: 48em) {
   html {
-    font-size: 18px;
+    font-size: 100%;
   }
 }
 
@@ -191,10 +191,17 @@ h6, .h6 {
   font-weight: 700;
 }
 
-.blogcrumb a {
+.blog-admin-options-icons {
   font-size: 1.25em;
+  float: right;
 
-  margin: 0px 10px;
+  a {
+    margin: 0 .3rem;
+  }
+}
+
+.blog-admin-options {
+  font-size: 1.1rem;
 }
 
 .blog-nav {
@@ -212,4 +219,14 @@ h6, .h6 {
 
 .nav-masthead {
   float: right;
+}
+
+.blog-options {
+  margin-top: 1rem;
+  font-size: 1.1rem
+}
+
+.topic {
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
 }

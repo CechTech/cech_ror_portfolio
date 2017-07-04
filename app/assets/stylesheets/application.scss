@@ -1,39 +1,31 @@
 @import "bootstrap";
 
-$main_white: #eeeeee;
-/*
- * Globals
- */
+$main_color: #eeeeee;
+$secondary_color: #111111;
+$link_color: #4099FF;
 
-/* Links */
 a,
 a:focus,
 a:hover {
-  color: $main_white;
+  color: $main_color;
 }
 
-/* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: $main_white;
-  border: .05rem solid $main_white;
+  background-color: $main_color;
+  border: .05rem solid $main_color;
 }
-
-
-/*
- * Base structure
- */
 
 html,
 body {
   height: 100%;
   font-family: 'PT Sans', sans-serif;
+  font-size: 100%;
 }
 body {
-  color: $main_white;
+  color: $main_color;
   text-align: center;
 }
 
@@ -55,18 +47,9 @@ body {
   margin-left: auto;
 }
 
-/* Padding for spacing */
-.inner {
-  padding: 2rem;
-}
-
-
-/*
- * Header
- */
-
 .navbar-brand {
   margin-bottom: 0;
+  font-size: 1.7rem;
 }
 
 .navbar-nav .nav-link {
@@ -74,7 +57,7 @@ body {
   color: rgba(255,255,255,.5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .navbar-nav .nav-link:hover,
@@ -82,13 +65,9 @@ body {
   border-bottom-color: rgba(255,255,255,.25);
 }
 
-.navbar-nav .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-
 .navbar-nav .active {
-  color: $main_white;
-  border-bottom-color: $main_white;
+  color: $main_color;
+  border-bottom-color: $main_color;
 }
 
 @media (min-width: 48em) {
@@ -100,11 +79,6 @@ body {
   }
 }
 
-
-/*
- * Cover
- */
-
 .cover {
   padding: 2rem 1.5rem;
   background-color: rgba(0,0,0,.6);
@@ -115,27 +89,13 @@ body {
   font-weight: bold;
 }
 
-
-/*
- * Footer
- */
-
-.mastfoot {
-  color: rgba(255,255,255,.5);
-}
-
-
-/*
- * Affix and center
- */
-
 @media (min-width: 40em) {
   /* Pull out the header and footer */
   .navbar {
     position: fixed;
     top: 0;
   }
-  .mastfoot {
+  .footer {
     position: fixed;
     bottom: 0;
   }
@@ -145,7 +105,7 @@ body {
   }
   /* Handle the widths */
   .navbar,
-  .mastfoot,
+  .footer,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
@@ -153,15 +113,11 @@ body {
 
 @media (min-width: 62em) {
   .navbar,
-  .mastfoot,
+  .footer,
   .cover-container {
     width: 65rem;
   }
 }
-
-/*
- * Custom styles
- */
 
 .card-block {
   color: black;
@@ -183,11 +139,12 @@ body {
 }
 
 .navbar-nav span {
-  margin-left: .6rem;
+  margin-left: 2rem;
 }
 
 .nav-login-helper {
   padding: 0;
+  margin-left: 2rem;
 }
 
 #background {
@@ -205,28 +162,33 @@ body {
 }
 
 .app-footer {
-  color: white;
+  color: $main_color;
 }
 
-.tech-news {
-  color: black;
-  margin: 20px;
+.twitter-heading {
+  color: #ffffff; 
+}
+
+.twitter {
+  color: $secondary_color;
+  margin: .5rem;
 
   .card {
-    padding: 30px;
+    padding: 1.1rem;
   }
 
   a {
-    color: green;
+    color: $link_color;
   }
 }
 
 .app-card-container {
-  color: black;
+  color: $secondary_color;
   text-align: left;
+  font-size: 1.05rem;
 
   .card {
-    padding: 40px;
+    padding: 2.5rem;
   }
 
   a {
@@ -234,33 +196,26 @@ body {
   }
 }
 
-.card-block {
-  margin: 5px 0;
-}
-
-.skill {
-  margin: 5px 0;
-}
-
 .lead {
-  color: $main_white;
+  color: $main_color;
   font-size: 1.1rem;
   margin-top: 1.3rem;
 }
 
 .homepage-btn {
   margin-top: 1rem;
-  width: 8em;
+  width: 8rem;
 }
 
 .navbar-toggler {
-  color: $main_white;
+  color: $main_color;
 }
 
 .navbar {
-  margin: 0;
+  margin-top: 1.8rem;
+  padding: 0;
 }
 
-.navbar-nav {
-  float: right;
+.navbar-toggleable-md .navbar-nav .nav-link {
+  padding: 0;
 }
