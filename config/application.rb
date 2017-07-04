@@ -16,7 +16,7 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module DevcampPortfolio
+module CechRoRPortfolio
   class Application < Rails::Application
     config.eager_load_paths << "#{Rails.root}/lib"
   end
