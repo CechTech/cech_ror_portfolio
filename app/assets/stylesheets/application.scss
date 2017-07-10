@@ -141,6 +141,10 @@ h1 {
   top: 75px;
 }
 
+.card {
+  top: 70px;
+}
+
 @media (min-width: 62em) {
   .navbar,
   .footer,
@@ -148,8 +152,12 @@ h1 {
     width: 65rem;
   }
 
+  .card {
+    top: 0;
+  }
+
   .twitter-container {
-    top: 0;  
+    top: 0;
   }
 
   h1 {
@@ -200,7 +208,7 @@ h1 {
 }
 
 .login > .card {
-  width: 22rem;
+  width: 20rem;
   margin: 0 auto;
   float: none;
 }
