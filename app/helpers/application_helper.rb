@@ -36,15 +36,7 @@ module ApplicationHelper
       },
       {
         url: twitter_path,
-        title: 'Twitter'
-      },
-      {
-        url: about_path,
-        title: 'About Me'
-      },
-      {
-        url: contact_path,
-        title: 'Contact'
+        title: 'Twitter Feed'
       }
     ]
   end
