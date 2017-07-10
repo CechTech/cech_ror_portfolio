@@ -78,7 +78,7 @@ body {
   position: relative;
   padding: 2rem 1.5rem;
   border-radius: 5px;
-  top: 50px;
+  top: 10px;
 }
 
 .cover .btn-lg {
@@ -88,7 +88,7 @@ body {
 
 .navbar {
   z-index: 999;
-  position: absolute;
+  position: fixed;
   top: 0;
 }
 
@@ -117,6 +117,10 @@ h1 {
   font-size: 1.8rem;
 }
 
+.lead {
+  margin-top: 0;
+}
+
 .app-footer {
   color: $main_color;
   margin-bottom: 1.1rem;
@@ -125,6 +129,12 @@ h1 {
 
 .btn-lg {
   font-size: .9rem;
+}
+
+.lead {
+  color: $main_color;
+  font-size: 1rem;
+  margin-top: 0;
 }
 
 @media (min-width: 62em) {
@@ -136,6 +146,11 @@ h1 {
 
   h1 {
     font-size: 2.5rem;
+  }
+
+  .lead {
+    margin-top: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .navbar-brand {
@@ -234,12 +249,6 @@ h1 {
   a {
     color: blue;
   }
-}
-
-.lead {
-  color: $main_color;
-  font-size: 1.1rem;
-  margin-top: 1.3rem;
 }
 
 .homepage-btn {
