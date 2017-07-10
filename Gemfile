@@ -103,3 +103,5 @@ gem 'coderay', '~> 1.1', '>= 1.1.1'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
+
+ruby "2.4.1"
