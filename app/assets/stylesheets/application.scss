@@ -137,11 +137,19 @@ h1 {
   margin-top: 0;
 }
 
+.twitter-container {
+  top: 75px;
+}
+
 @media (min-width: 62em) {
   .navbar,
   .footer,
   .cover-container {
     width: 65rem;
+  }
+
+  .twitter-container {
+    top: 0;  
   }
 
   h1 {
