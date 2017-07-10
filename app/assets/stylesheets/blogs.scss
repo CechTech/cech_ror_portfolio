@@ -100,6 +100,22 @@ h6, .h6 {
   color: #999;
 }
 
+.blog-nav {
+  margin-bottom: 10px;
+  padding: 1rem;
+}
+
+.navbar-toggler {
+  z-index: 999;
+}
+
+@media (min-width: 992px) {
+  .blog-nav {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+}
+
 @media (min-width: 40em) {
   .blog-title {
     font-size: 3.5rem;
@@ -202,11 +218,6 @@ h6, .h6 {
 
 .blog-admin-options {
   font-size: 1.1rem;
-}
-
-.blog-nav {
-  margin-bottom: 30px;
-  padding: 0;
 }
 
 .blog-sidebar-source {
