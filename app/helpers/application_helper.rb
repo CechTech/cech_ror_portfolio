@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    CechViewTool::Renderer.copyright 'Jiří Čech', 'All rights reserved'
+    CechViewTool::Renderer.copyright "<a href='http://www.jiricech.com/' target='_blank'>Jiří Čech</a>", 'All rights reserved'
   end
 
   def nav_items

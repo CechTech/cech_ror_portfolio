@@ -70,8 +70,8 @@ body {
   border-bottom-color: $main_color;
 }
 
-@media (min-width: 48em) {
-
+.site-wrapper-inner {
+  vertical-align: middle;
 }
 
 .cover {
@@ -86,12 +86,6 @@ body {
   font-weight: bold;
 }
 
-/* Start the vertical centering */
-.site-wrapper-inner {
-  vertical-align: middle;
-}
-
-/* Pull out the header and footer */
 .navbar {
   z-index: 999;
   position: absolute;
@@ -156,7 +150,6 @@ h1 {
 
   .cover {
     background-color: rgba(0,0,0,.6);
-    position: fixed;
     top: 0;
   }
 
