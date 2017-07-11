@@ -1,7 +1,7 @@
+<%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
 <div class="album text-muted">
   <div class="container">
-    <%= source_helper("alert alert-warning") %>
-
+    <%= link_to 'Create a New Portfolio Item', new_portfolio_path if logged_in?(:site_admin) %>
     <div class="row <%= "sortable" %>">
       <%= render partial: 'portfolio_item', collection: @portfolio_items %>
     </div>
