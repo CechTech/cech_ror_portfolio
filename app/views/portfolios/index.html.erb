@@ -1,4 +1,4 @@
-<%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
+<%= render 'shared/portfolio_masthead' %>
 <div class="album text-muted">
   <div class="container">
     <%= link_to 'Create a New Portfolio Item', new_portfolio_path if logged_in?(:site_admin) %>
