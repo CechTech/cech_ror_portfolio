@@ -3,7 +3,10 @@
     <h1 class="blog-title">My Ruby on Rails Blog</h1>
     <div class="blog-options">
       <span>
-        <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+        <%= link_to "Topics", topics_path %>
+      </span>
+      <span>
+        <%= link_to ' / Write a New Blog', new_blog_path if logged_in?(:site_admin) %> 
       </span>
     </div>
   </div>

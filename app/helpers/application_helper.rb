@@ -62,6 +62,6 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-    js add_gritter(msg, title: "Jiří Čech Ror Portfolio", sticky: false)
+    js add_gritter(msg, title: "Jiří Čech RoR Portfolio", sticky: false, time: 2500)
   end
 end
