@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="My Ruby on Rails development portfolio website. You can find here blog with advanced features such as live comments and markdown editor, portfolio app with drag and drop functionality and image upload, and Twitter feed page of my account." />
+    <meta name="author" content="Jiří Čech" />
+
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;subset=latin-ext" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet" />
     <meta name="keywords" content="<%= @seo_keywords %>" />
     <%= favicon_link_tag 'favicon.ico' %>
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
