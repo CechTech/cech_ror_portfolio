@@ -6,9 +6,9 @@ class BlogsController < ApplicationController
 
   def index
     if logged_in?(:site_admin)
-      @blogs = Blog.recent.page(params[:page]).per(5)
+      @blogs = Blog.recent.page(params[:page]).per(3)
     else
-      @blogs = Blog.published.recent.page(params[:page]).per(5)
+      @blogs = Blog.published.recent.page(params[:page]).per(3)
     end
     @page_title = "My Portfolio Blog"
   end
